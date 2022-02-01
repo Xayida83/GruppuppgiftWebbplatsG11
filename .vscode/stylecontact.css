@@ -66,12 +66,12 @@ input {
   border-radius: 8px;
   box-shadow: 0 0 10px -5px #000;
 }
-button:hover {
+#submit:hover {
   background: #78788c;
   color: #fff;
 }
 
 span {
-  margin: 0 5px 0 15px;
+  margin: 0 15px 0 15px;
 }
 
