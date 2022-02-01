@@ -80,15 +80,23 @@ h1{
    
      color: #0081A7;
     }
+    .icons{
+      display:flex;
+      flex-direction: center;
+      width:100%;
+    }
+  #p{
+    max-width:30px;
+    margin:3px auto;
+  }
    footer {
     
      
    display:flex;
    justify-content: center;
-   
-    font-family: 'Times New Roman', Times;
-     background-color: #0081A7;
-   
+   gap:20px;
+   font-family: 'Times New Roman', Times;
+     
      padding: 3px;
      break-after: always;
    }
