@@ -2,13 +2,13 @@ body {
   background: #0081A7;
   margin: 10px;
 }
+
 .form {
   width: 340px;
   height: 440px;
   background: #FED9B7;
   border-radius: 8px;
   box-shadow: 0 0 40px -10px #000;
-  /*Göra margin på annat sätt?*/
   margin: calc(50vh - 220px) auto;
   padding: 20px 30px 30px 30px;
   max-width: calc(100vw - 80px);
@@ -17,14 +17,14 @@ body {
   font-size: larger;
   position: relative;
 }
-
-h2 {
+.form h2 {
   margin: 10px 0;
   padding-bottom: 10px;
   width: 180px;
   color: #0081A7;
   border-bottom: 3px solid #333333;
 }
+
 input {
   width: 100%;
   padding: 10px;
@@ -67,8 +67,8 @@ input {
   box-shadow: 0 0 10px -5px #000;
 }
 #submit:hover {
-  background: #78788c;
-  color: #fff;
+  background: #0081A7;
+  color: #FED9B7;
 }
 
 span {
