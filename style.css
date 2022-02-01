@@ -1,0 +1,97 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+
+
+  body{
+  display:flex;
+  flex-direction:column;
+   margin:0;
+   padding:0;
+   background-color: #FED9B7;
+ 
+  }
+
+h1{
+    
+    display:flex;
+    justify-content: center;
+    color:#0081A7;
+    font-family: "Rozha One", serif;
+    
+    font-weight: bolder;
+  }
+   
+ .logo{
+     align-content: center;
+      width: 10%;
+      margin: 0.5em;
+    }
+
+    .images{
+     display: flex;
+    justify-content: center;
+     flex-direction: column;
+     margin: 10px auto;
+     gap: 10px;
+     width: 90%;
+    }
+    .images{
+      
+        border-radius: 15px 50px;
+        background: #0081A7;
+        padding: 20px;
+        width: 90%;
+      }
+    }
+   section{
+  border: 4px double;
+    display:flex;
+    justify-items:center;
+     font-family: 'Times New Roman', Times, serif;
+     box-sizing: border-box;
+
+     background-color: #FDFCDC;
+     padding: 10px;
+     margin: 10px;
+    }
+    
+    h2{
+    font-family: "Rozha One", serif;
+    font-weight: bold;
+     text-align: center ;
+   
+     color: #0081A7;
+    }
+   footer {
+     display: flex;
+     flex-basis: bottom;
+     justify-content: center;
+    font-family: 'Times New Roman', Times;
+     background-color: #0081A7;
+   
+     padding: 10px;
+     justify-content: center;
+   }
