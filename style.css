@@ -52,18 +52,13 @@ h1{
 
     .images{
      display: flex;
-    justify-content: center;
+     justify-content: center;
      flex-direction: column;
      margin: 10px auto;
-     gap: 10px;
-     width: 90%;
-    }
-    .images{
-      
-        border-radius: 15px 50px;
-        background: #0081A7;
-        padding: 20px;
-        width: 90%;
+      border-radius: 15px 50px;
+      background: #0081A7;
+      padding: 20px;
+      width: 90%;
       }
     }
    section{
@@ -86,12 +81,14 @@ h1{
      color: #0081A7;
     }
    footer {
-     display: flex;
-     flex-basis: bottom;
-     justify-content: center;
+    
+     
+   display:flex;
+   justify-content: center;
+   
     font-family: 'Times New Roman', Times;
      background-color: #0081A7;
    
-     padding: 10px;
-     justify-content: center;
+     padding: 3px;
+     break-after: always;
    }
