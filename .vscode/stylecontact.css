@@ -14,7 +14,7 @@ nav {
   background: #FED9B7;
   border-radius: 8px;
   box-shadow: 0 0 40px -10px #000;
-  margin: calc(40vh - 200px) auto;
+  margin: calc(35vh - 200px) auto;
   padding: 20px 30px 30px 30px;
   max-width: calc(100vw - 80px);
   box-sizing: content-box;
