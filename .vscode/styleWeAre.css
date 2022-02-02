@@ -11,13 +11,16 @@ html {
 }
 
 body {
-  background-color: #F07167;
+  background-color: #00AFB9;
   font-family: "Rozha One", serif;
   font-size: large;
   justify-content: center;
   align-items: center;
 }
-
+nav {
+  background-color: #FED9B7;
+  height: 70px;
+}
 #title {
   margin: 10px;
   text-align: center;
@@ -41,7 +44,7 @@ body {
 }
 
 .imgBox {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -58,11 +61,11 @@ body {
 }
 
 .content {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 30%;
   padding: 1.5rem;
   display: flex;
   justify-content: center;
@@ -82,13 +85,11 @@ body {
   letter-spacing: 1px;
   
 }
-a {
-  text-decoration: none;
+.content a {
+  position: absolute;
+  text-decoration: underline #333333;
 }
-a :hover{
-  font-size: 150%;
-  color: #F07167;
-}
+
 
 .content span {
   color: #555;
@@ -97,7 +98,7 @@ a :hover{
   letter-spacing: 2px;
 }
 
-@media (max-width: 500px) {
+/*@media (max-width: 500px) {
     .container .content {
      position: relative;
      top: 0;
@@ -110,15 +111,27 @@ a :hover{
      position: absolute;
      text-decoration: underline #333333;
    }
-}
+}*/
 
 @media (min-width: 500px) {
   .container .box:hover .imgBox {
     transform: translate(-3.5rem, -3.5rem);
   }
-  
+  .container .imgBox {
+    position: absolute;
+  }
   .container .box:hover .content {
     transform: translate(3.5rem, 3.5rem);
   }
-
+  .container .content {
+    position: absolute;
+    height: 100%;
+  }
+  .container .content a {
+    text-decoration: none;
+  }
+  .container .content a :hover{
+    font-size: 150%;
+    color: #F07167;
+  }
 }
