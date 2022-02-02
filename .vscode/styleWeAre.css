@@ -13,21 +13,23 @@ html {
 body {
   background-color: #00AFB9;
   font-family: "Rozha One", serif;
-  font-size: large;
+  font-size: 1.6em;
   justify-content: center;
   align-items: center;
 }
+
 nav {
   background-color: #FED9B7;
-  height: 70px;
+  height: 7rem;
 }
 #title {
-  margin: 10px;
+  margin: 1rem;
   text-align: center;
 }
 #title h1 {
   font-size: 12vw;
 }
+
 .container {
   position: relative;
   display: flex;
@@ -52,7 +54,6 @@ nav {
   z-index: 2;
   transition: all 0.5s ease-in-out;
 }
-
 .imgBox img {
   width: 25rem;
   height: 25rem;
@@ -83,35 +84,18 @@ nav {
   font-weight: 500;
   line-height: 2rem;
   letter-spacing: 1px;
-  
+  margin-bottom: 0.5rem;
 }
 .content a {
   position: absolute;
   text-decoration: underline #333333;
 }
-
-
 .content span {
   color: #555;
   font-size: 1.4rem;
   font-weight: 300;
   letter-spacing: 2px;
 }
-
-/*@media (max-width: 500px) {
-    .container .content {
-     position: relative;
-     top: 0;
-     height: 30%;
-   }
-   .container .imgBox {
-     position: relative;
-   }
-   .container .content a {
-     position: absolute;
-     text-decoration: underline #333333;
-   }
-}*/
 
 @media (min-width: 500px) {
   .container .box:hover .imgBox {
