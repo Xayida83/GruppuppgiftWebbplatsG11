@@ -23,9 +23,8 @@ time, mark, audio, video {
 body{
   display: flexbox;
   flex-direction: column;
- 
   justify-content: space-between;
-  margin:0;
+  margin-top:10px;
   padding:0;
   width:100%;
   background: linear-gradient(
@@ -33,16 +32,16 @@ body{
    #FED9B7 30%, #FDFCDC
  );
  background-repeat:no-repeat
+ 
 }
 .logo{
-    align-content: center;
      width: 10%;
      margin: 0.5em;
    }
 
 .welcome{
   display:flex;
-  top:75px;
+  top:100px;
   justify-content: center;
    color:#0081A7;
    font-family: "Rozha One", serif;
@@ -64,7 +63,7 @@ body{
  }
   
   .main-text{
-      border-radius: 20px;
+     
       display:flex;
       justify-items:center;
       font-family: "Rozha One", serif;
@@ -72,9 +71,8 @@ body{
        text-align: center ;
        color: #0081A7;
        font-family: 'Times New Roman', Times, serif;  
-       /* background-color: #FDFCDC; */
        padding: 5%;
-       margin: 20px;
+       margin: 0px;
      }
 
    .image{
@@ -82,29 +80,24 @@ body{
      justify-content: center;
      flex-direction: column;
      margin: 10px auto;
-     /* border-radius: 15px 50px; */
-     background: #0081A7;
+     background: #026a8a;
      padding:5px;
      width: 90%;
      }
-    /* image reflection*/
-     /* .image{
-     -webkit-box-reflect:below -20px -webkit-gradient(linear, right top, right bottom, from(transparent), to(rgba(255,255,255,0.2))) ;
-     } */
-     #icon{
-      -webkit-box-reflect:below 0px -webkit-gradient(linear, right top, right bottom, from(transparent), to(rgba(255,255,255,0.2))) ;
-      }
    
-   .icons{
+     .icons{
      display:flex;
      flex-direction: center;
      width:100%;
+   
     }
     #icon{
       animation-duration: 4s;
       animation-name: slidein;
       max-width:40px;
       margin: 10% auto;
+      
+      -webkit-box-reflect:below 0px -webkit-gradient(linear, right top, right bottom, from(transparent), to(rgba(255,255,255,0.2))) ;
  }
 
 
@@ -126,37 +119,152 @@ body{
   margin-bottom: 5px;
   color: #0081A7;
   font-family: 'Times New Roman', Times;
-  font-size:large;
+  font-size:15px;
    padding: 3px;
    break-after: always;
   }
-/* surfplattans storlek*/
+/* surfplattans storlek--------------------------*/
 @media only screen and (min-width: 600px) {
+  
   body{
     display: flexbox;
+    flex-direction: column;
+    justify-content: space-between;
     margin:0;
     padding:0;
     width:100%;
-    
-    background: linear-gradient(   #FED9B7 30%, #FDFCDC 70%
+    background: linear-gradient(  
+     #FED9B7 30%, #FDFCDC
    );
    background-repeat:no-repeat
   }
   .logo{
-      align-content: center;
        width: 10%;
        margin: 0.5em;
      }
   
   .welcome{
     display:flex;
-    top:75px;
+    top:100px;
     justify-content: center;
      color:#0081A7;
      font-family: "Rozha One", serif;
      font-weight: bolder;
      letter-spacing:2px;
-     font-size:50px;
+     font-size:35px;
+     animation:text 3s 1;
+   }
+   @keyframes text {
+     0%{
+    
+       margin-top: -40px;
+     }
+     30%{
+       letter-spacing: 10px;
+      
+       margin-top: -40px;
+     }
+     
+   }
+    
+    .main-text{
+        border-radius: 20px;
+        display:flex;
+        justify-items:center;
+        font-family: "Rozha One", serif;
+        font-size: x-large;
+        font-weight: bold;
+         text-align: center ;
+         color: #0081A7;
+         font-family: 'Times New Roman', Times, serif;  
+         
+         padding: 5%;
+         margin: 20px;
+       }
+  
+     .image{
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       margin: 10px auto;
+       /* border-radius: 15px 50px; */
+       background: #026a8a;
+       padding:5px;
+       width: 90%;
+       }
+     
+         
+     .icons{
+       display:flex;
+       flex-direction: center;
+       width:100%;
+      }
+      #icon{
+        animation-duration: 4s;
+        animation-name: slidein;
+        max-width:40px;
+        margin: 10% auto;
+        /* Icons reflection*/
+        -webkit-box-reflect:below 0px -webkit-gradient(linear, right top, right bottom, from(transparent), to(rgba(255,255,255,0.2))) ;
+   }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+     margin-left: 10% ;
+      width: 100%;
+    }
+  }
+   
+    footer {
+    display:flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    color: #0081A7;
+    font-family: 'Times New Roman', Times;
+    font-size:large;
+     padding: 3px;
+     break-after: always;
+    }
+ 
+}
+/* stora skärmar-----------------------------------*/
+@media only screen and (min-width: 992px) {
+  
+
+
+  body{
+    display: flexbox;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top:10px;
+    padding:0;
+    width:100%;
+    background: linear-gradient(
+    
+     #FED9B7 30%, #FDFCDC
+   );
+   background-repeat:no-repeat
+   
+  }
+  .logo{
+       width: 10%;
+       margin: 0.5em;
+     }
+  
+  .welcome{
+    display:flex;
+    top:100px;
+    justify-content: center;
+     color:#0081A7;
+     font-family: "Rozha One", serif;
+     font-weight: bolder;
+     letter-spacing:2px;
+     font-size:25px;
      animation:text 3s 1;
    }
    @keyframes text {
@@ -172,47 +280,41 @@ body{
    }
     
     .main-text{
-        border-radius: 20px;
+       
         display:flex;
-        justify-content:center;
+        justify-items:center;
         font-family: "Rozha One", serif;
-        font-size: xx-large;
         font-weight: bold;
-        text-align: center ;
+         text-align: center ;
          color: #0081A7;
          font-family: 'Times New Roman', Times, serif;  
-         /* background-color: #FDFCDC; */
          padding: 5%;
-         margin:2px;
+         margin: 0px;
        }
   
      .image{
        display: flex;
        justify-content: center;
        flex-direction: column;
-       margin: 10% auto;
-       FONT-VARIANT: JIS04;
-       background: #0081A7;
-       padding:10px;
+       margin: 10px auto;
+       background: #026a8a;
+       padding:5px;
        width: 90%;
        }
-      
-       #icon{
-       
-        -webkit-box-reflect:below 0px -webkit-gradient(linear, right top, right bottom, from(transparent), to(rgba(255,255,255,0.2))) ;
-        }
      
-     .icons{
+       .icons{
        display:flex;
        flex-direction: center;
        width:100%;
-       margin:10%;
+     
       }
       #icon{
         animation-duration: 4s;
         animation-name: slidein;
-        max-width:10%;
-        margin:10% auto;
+        max-width:40px;
+        margin: 10% auto;
+        
+        -webkit-box-reflect:below 0px -webkit-gradient(linear, right top, right bottom, from(transparent), to(rgba(255,255,255,0.2))) ;
    }
   
   
@@ -223,7 +325,7 @@ body{
     }
   
     to {
-      margin-left: 10%;
+      margin-left: 28px ;
       width: 100%;
     }
   }
@@ -234,14 +336,9 @@ body{
     margin-bottom: 5px;
     color: #0081A7;
     font-family: 'Times New Roman', Times;
-    font-size: x-large;
-    font-size: 25px;
-    padding: 3px;
+    font-size:large;
+     padding: 3px;
      break-after: always;
     }
- 
-}
-@media only screen and (min-width: 992px) {
-
 }
   
