@@ -1,0 +1,100 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  margin: 50px 0px;
+}
+.skill {
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+.outer{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), -6px -6px 10px -1px rgba(255,255,255,0.7);
+}
+.inner {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*border: 1px solid #333333;*/
+  box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+  inset 4px 4px 6px -1px rgba(255,255,255,0.7),
+  0.5px 0.5px 0px rgba(255,255,255,1),
+  0px 12px 10px -10px rgba(0,0,0,0.5);
+}
+.language {
+  font-family:'Times New Roman', Times, serif;
+  font-size: 90%;
+  color: #333333;
+}
+#left-skill-circle{
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 10px;
+  stroke-dasharray: 236;
+  stroke-dashoffset: 236;
+  animation: left 2s linear forwards;
+}
+#middle-skill-circle{
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 10px;
+  stroke-dasharray: 236;
+  stroke-dashoffset: 236;
+  animation: middle 2s linear forwards;
+}
+#right-skill-circle{
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 10px;
+  stroke-dasharray: 236;
+  stroke-dashoffset: 236;
+  animation: right 2s linear forwards;
+}
+svg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+ 
+}
+/*Uträkning exempel: 236 - 30% = skriv den summan på stroke-dashoffset */
+@keyframes left {
+  100%{
+    stroke-dashoffset: 82.6;
+  }
+}
+@keyframes middle {
+  100%{
+    stroke-dashoffset: 165.2;
+  }
+}
+@keyframes right {
+  100%{
+    stroke-dashoffset: 47.2;
+  }
+}
+
+@media (min-width: 600px) {
+  .container {
+    width: 400px ;
+  }
+}
