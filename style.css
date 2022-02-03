@@ -85,33 +85,30 @@ body{
      width: 90%;
      }
    
+     
      .icons{
-     display:flex;
-     flex-direction: center;
-     width:100%;
-   
-    }
-    #icon{
-      animation-duration: 4s;
-      animation-name: slidein;
-      max-width:40px;
-      margin: 10% auto;
-      
-      -webkit-box-reflect:below 0px -webkit-gradient(linear, right top, right bottom, from(transparent), to(rgba(255,255,255,0.2))) ;
+      display:flex;
+      flex-direction: center;
+
+     }
+     #icon{
+       animation-duration: 4s;
+       animation-name: slidein;
+       max-width:40%;
+       margin:34%;
+       -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.2));
+  }
+ @keyframes slidein {
+   from {
+     margin-left: 100%;
+     width: 300%;
+   }
+ 
+   to {
+     margin-left: 34% ;
+     width: 100%;
+   }
  }
-
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 28px ;
-    width: 100%;
-  }
-}
  
   footer {
   display:flex;
@@ -123,7 +120,7 @@ body{
    padding: 3px;
    break-after: always;
   }
-/* surfplattans storlek--------------------------*/
+/* small devices *tablets and large phons--------------------------*/
 @media only screen and (min-width: 600px) {
   
   body{
@@ -194,31 +191,31 @@ body{
        }
      
          
-     .icons{
-       display:flex;
-       flex-direction: center;
-       width:100%;
-      }
-      #icon{
-        animation-duration: 4s;
-        animation-name: slidein;
-        max-width:40px;
-        margin: 10% auto;
-        /* Icons reflection*/
-        -webkit-box-reflect:below 0px -webkit-gradient(linear, right top, right bottom, from(transparent), to(rgba(255,255,255,0.2))) ;
+       
+       .icons{
+        display:flex;
+        flex-direction: center;
+  
+       }
+       #icon{
+         animation-duration: 4s;
+         animation-name: slidein;
+         max-width:35%;
+         margin:34%;
+         -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.2));
+    }
+   @keyframes slidein {
+     from {
+       margin-left: 100%;
+       width: 300%;
+     }
+   
+     to {
+       margin-left: 34% ;
+       width: 100%;
+     }
    }
-  
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-  
-    to {
-     margin-left: 10% ;
-      width: 100%;
-    }
-  }
+ 
    
     footer {
     display:flex;
@@ -232,16 +229,13 @@ body{
     }
  
 }
-/* stora skärmar-----------------------------------*/
+/*Large devices *laptops&desktops-----------------------------------*/
 @media only screen and (min-width: 992px) {
   
 
 
   body{
-    display: flexbox;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top:10px;
+    margin: 0;
     padding:0;
     width:100%;
     background: linear-gradient(
@@ -261,10 +255,9 @@ body{
     top:100px;
     justify-content: center;
      color:#0081A7;
-     font-family: "Rozha One", serif;
+     font-family: Georgia, 'Times New Roman', Times, serif;
      font-weight: bolder;
      letter-spacing:2px;
-     font-size:25px;
      animation:text 3s 1;
    }
    @keyframes text {
@@ -280,44 +273,48 @@ body{
    }
     
     .main-text{
-       
-        display:flex;
-        justify-items:center;
-        font-family: "Rozha One", serif;
-        font-weight: bold;
-         text-align: center ;
-         color: #0081A7;
-         font-family: 'Times New Roman', Times, serif;  
-         padding: 5%;
-         margin: 0px;
+      display:flex;
+      justify-items:center;
+      font-family: "Rozha One", serif;
+      font-weight: bold;
+       text-align: center ;
+       color: #0081A7;
+       font-family: 'Times New Roman', Times, serif;  
+    
+       margin: 0px;
        }
   
      .image{
-       display: flex;
-       justify-content: center;
-       flex-direction: column;
-       margin: 10px auto;
-       background: #026a8a;
-       padding:5px;
-       width: 90%;
+      align-self: center;
+       margin:auto; 
+       /* background: rgb(2, 106, 138); */
+       padding:10px;
+       width:80%;
+       height: 20%;
+       object-fit: cover;
+       box-shadow: 0 8px 16px 0 rgb(2, 106, 138), 0 6px 20px 0 rgba(0,0,0,0.30);
        }
      
        .icons{
        display:flex;
+       
        flex-direction: center;
-       width:100%;
+        margin-left: 50px;
+       margin-right: 50px;
      
+      }
+      #icon:hover {
+
+        border-radius:35px;
+        box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
       }
       #icon{
         animation-duration: 4s;
         animation-name: slidein;
-        max-width:40px;
-        margin: 10% auto;
-        
-        -webkit-box-reflect:below 0px -webkit-gradient(linear, right top, right bottom, from(transparent), to(rgba(255,255,255,0.2))) ;
+        max-width:20%;
+        margin: 100px;
+        -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.2));
    }
-  
-  
   @keyframes slidein {
     from {
       margin-left: 100%;
@@ -325,20 +322,20 @@ body{
     }
   
     to {
-      margin-left: 28px ;
+      margin-left: 34% ;
       width: 100%;
     }
   }
    
     footer {
-    display:flex;
-    justify-content: center;
-    margin-bottom: 5px;
     color: #0081A7;
     font-family: 'Times New Roman', Times;
     font-size:large;
-     padding: 3px;
-     break-after: always;
+    text-align: center;
+    padding: 3px;
+    position: fixed;
+    bottom:0;
+    width: 100%;
     }
 }
   
