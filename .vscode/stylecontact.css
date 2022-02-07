@@ -1,6 +1,6 @@
 body {
-  background: #0081A7;
   margin: 10px;
+  background: linear-gradient(#0081A7 10%, #00AFB9 );
 }
 
 nav {
