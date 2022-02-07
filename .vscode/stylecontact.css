@@ -1,11 +1,12 @@
 body {
-  margin: 10px;
+  margin:0;
   background: linear-gradient(#0081A7 10%, #00AFB9 );
+  background-repeat: no-repeat;
 }
 
 nav {
  background-color: #F07167;
- height: 70px;
+ height: 100px;
 }
 
 .form {
@@ -93,3 +94,9 @@ span {
   margin: 0 15px 0 15px;
 }
 
+@media  (min-width: 600px){
+  nav {
+    background-color: #00AFB9;
+    height: 100px;
+   }
+}

@@ -11,8 +11,9 @@ html {
 }
 
 body {
-  background-color: #00AFB9;
+  background: linear-gradient(#0081A7 20%, #00AFB9);
   font-family: "Rozha One", serif;
+  background-repeat: no-repeat;
   font-size: 1.6em;
   justify-content: center;
   align-items: center;
@@ -20,7 +21,7 @@ body {
 
 nav {
   background-color: #FED9B7;
-  height: 7rem;
+  height: 100px;
 }
 #title {
   margin: 1rem;
@@ -76,7 +77,13 @@ nav {
   text-align: center;
   transition: 0.5s ease-in-out;
 }
-
+.content span {
+  color: #555;
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 5px;
+}
 .content h2 {
   display: block;
   font-size: 2rem;
@@ -90,12 +97,7 @@ nav {
   position: absolute;
   text-decoration: underline #333333;
 }
-.content span {
-  color: #555;
-  font-size: 1.4rem;
-  font-weight: 300;
-  letter-spacing: 2px;
-}
+
 
 @media (min-width: 600px) {
   .container .box:hover .imgBox {
@@ -114,8 +116,7 @@ nav {
   .container .content a {
     text-decoration: none;
   }
-  .container .content a :hover{
-    font-size: 150%;
+  .container .content a :hover {
     color: #F07167;
   }
 }
