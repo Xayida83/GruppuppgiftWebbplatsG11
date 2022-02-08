@@ -1,0 +1,86 @@
+/*NAVBAR CSS*/
+ul{
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f07167;
+  justify-content: center;
+}
+
+#logo{
+  margin-top: 10px;
+  margin-left: 20px;
+  position: absolute;
+}
+
+li a{
+  display: inline-block;
+  color: navy;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: large;
+}
+
+li a:hover{
+  background-color: blueviolet;
+  transition: 1s;
+  color:blanchedalmond;  
+}
+
+.active{
+  color: black;
+  font-weight: bold;
+}
+
+/*SECTION COLOURS*/
+#welcome-section {
+  background-color: #00AFB9;
+}
+
+#projects-section {
+  background-color: #FED9B7;
+}
+
+#contact-us-section {
+  background-color: #f07167;
+}
+
+/*FONT*/
+h1, h4, h2 {
+  font-family: "Rozha One", serif;
+}
+
+h3, h5 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.project-title {
+  font-family: "Times New Roman", Times, serif;
+}
+
+/*FLEXBOX*/
+.main-flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 992px) {
+    #projects-section{
+      background-color: #0081A7;
+    }
+  }
+
+
+  
+
+  
+
+

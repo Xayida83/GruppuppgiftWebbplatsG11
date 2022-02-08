@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Scope+One&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="personalDBstyles.css">
+  <title>Personal page Daniela</title>
+</head>
+<body>
+  <!--PROVISORISK LOGGA START-->
+  <header>
+    <div id="logo">
+      <a href="https://www.sprinto.se/"> <img src="logotyp.svg" alt="Sprintos logotyp"></a>
+    </div>
+  </header>
+<!--PROVISORISK LOGGA END-->
+
+<!--PROVISORISK NAVBAR START-->
+  <nav>
+    <ul>
+        <li><a class="active" href="index.html">Hem</a></li> 
+        <li><a href="om-oss.html">Om oss</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="blogg.html">Blogg</a></li> 
+    </ul>
+  </nav>
+<!--PROVISORISK NAVBAR END-->
+<!--MAIN FLEX CONTAINER START -får hålla alla sections. Sections blir flex items-->
+  <div class="main-flex-container">
+    <section id="picture-section">
+      <div class="profile-picture">
+           <img class="kayak-pic" src="./Images/Kayak.jpg" alt="picture-of-kayak">
+      </div>
+    </section>
+    <section id="text-section">
+      <div id="top-of-text">
+        <h1>.NET developer</h1>
+        <h2>Daniela Bergdahl</h2>
+      </div>
+      <div>
+        <h3>Hi, when I'm not at work <br> I'm mostly outdoors <br>trekking or kayaking</h3>
+      </div>
+      <div>
+        <p>Except from finding new <br> hidden tracks in the forest...</p>
+      </div>
+    </section>
+    <section id="skills-section">
+      <div id="top-of-skills-text">
+        <p>these are some of my <br> skills</p>
+      </div>
+      <div class="container">
+        <div class=skill>
+          <div class="outer">
+            <div class="inner">
+              <div class="language">CSS
+                <br> 65%</div>
+            </div>
+          </div>
+
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100px" height="100px">
+            <defs>
+               <linearGradient id="GradientColorLeft"> /*Ändra i CSSn också*/
+                  <stop offset="0%" stop-color="#FED9B7" />
+                  <stop offset="100%" stop-color="#F07167" />
+               </linearGradient>
+            </defs>
+            <circle id="left-skill-circle" cx="40" cy="40" r="35" stroke-linecap="round" />
+          </svg>
+        </div>
+
+        <div class=skill>
+          <div class="outer">
+            <div class="inner">
+              <div class="language">HTML<br>
+              30%</div>
+            </div>
+          </div>
+      
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100px" height="100px">
+            <defs>
+               <linearGradient id="GradientColorMiddle">
+                  <stop offset="0%" stop-color="#e91e63" />
+                  <stop offset="100%" stop-color="#673ab7" />
+               </linearGradient>
+            </defs>
+            <circle id="middle-skill-circle" cx="40" cy="40" r="35" stroke-linecap="round" />
+          </svg>
+        </div>
+
+        <div class=skill>
+          <div class="outer">
+            <div class="inner">
+              <div class="language">#C <br> 80%</div>
+            </div>
+          </div>
+      
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100px" height="100px">
+            <defs>
+               <linearGradient id="GradientColorRight">
+                  <stop offset="0%" stop-color="#e91e63" />
+                  <stop offset="100%" stop-color="#673ab7" />
+               </linearGradient>
+            </defs>
+            <circle id="right-skill-circle" cx="40" cy="40" r="35" stroke-linecap="round" />
+          </svg>
+        </div>
+      </div>
+      <!--CONTAINER FOR PROGRESS BAR END-->
+    </section>
+  </div>   
+  <!--MAIN FLEX CONTAINER END-->  
+</body>
+</html>

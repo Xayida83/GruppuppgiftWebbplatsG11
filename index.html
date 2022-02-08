@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Scope+One&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Portfolio</title>
+</head>
+<body>
+<!--PROVISORISK LOGGA START-->
+    <header>
+      <div id="logo">
+        <a href="https://www.sprinto.se/"> <img src="logotyp.svg" alt="Sprintos logotyp"></a>
+      </div>
+    </header>
+<!--PROVISORISK LOGGA END-->
+
+<!--PROVISORISK NAVBAR START-->
+    <nav>
+      <ul>
+          <li><a class="active" href="index.html">Hem</a></li> 
+          <li><a href="om-oss.html">Om oss</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="blogg.html">Blogg</a></li> 
+      </ul>
+    </nav>
+<!--PROVISORISK NAVBAR END-->
+
+  <!--main-flex-container får hålla alla sections. Sections blir flex items-->
+  <div class="main-flex-container">
+      <!--Start welcome section-->
+      <section id="welcome-section">
+        <h3>We are</h3>
+        <h1>HILD</h1>
+        <h4>web developers</h4>
+      </section>
+  <!--END WELCOME SECTION-->      
+  <!--Start projects section-->      
+      <section id="projects-section">  
+        <h4>These are some of our projects...</h4>
+        <div class="tribute-project">
+          <a href="https://codepen.io/Frida-Danni/pen/ZEGpzRj"
+             target="_blank"
+             class="project project-tile"> <!--Vad behövs den här classen till?-->
+             <img class="tribute-pic" src="./Images/Astronaut.JPG" alt="picture-of-astronaut">
+             <div class="project-title">Tribute Page</div></a>
+             <div class="project-text">
+                  <h5>We made a tribute page for the receiving of the Presidential Medal of Freedom in 2016, US. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores pariatur asperiores sint beatae sunt impedit placeat error ipsa ullam natus dolore, rem quidem perspiciatis quod sit molestiae sequi provident harum</h5>     
+             </div>
+        </div>
+        <div class="landing-page-project">
+          <a href="https://codepen.io/Frida-Danni/pen/mdJqoGx"
+             target="_blank"
+             class="project project-tile"> <!--Vad behövs den här classen till?-->
+             <img class="e-commerce-pic" src="./Images/Ecommerce.jpg" alt="mobilephone">
+             <div class="project-title">Landing Page for e-commerce</div></a>
+             <div class="project-text">
+                  <h5>We made the His&Mauritz landing page 2022. It was rewarded for best landing page that year. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, blanditiis temporibus? Voluptas nesciunt, laudantium nulla odio amet atque neque, repudiandae asperiores officiis laborum voluptate assumenda! Aliquam recusandae soluta perferendis maxime.</h5>     
+             </div>
+        </div>
+        <div class="Technical-documentation-page-project">
+          <a href="https://codepen.io/Frida-Danni/pen/OJVEQja"
+             target="_blank"
+             class="project project-tile"> <!--Vad behövs den här classen till?-->
+             <img class="code-pic" src="./Images/Code.jpg" alt="computer-screen">
+             <div class="project-title">Technical documentation page</div></a>
+             <div class="project-text">
+                  <h5>We made a technical documentation page for FreecodeCamp. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolorem fugiat, quas dicta asperiores quisquam nisi dolores, temporibus nostrum, repellendus tenetur labore in rem aut necessitatibus vel pariatur nulla explicabo.</h5>     
+             </div>
+        </div>
+      </section>  
+  <!--END PROJECTS SECTION-->
+  <!--START CONTACT US SECTION-->
+      <section id="contact-us-section">      
+        <h2>Let's work together!</h2>
+        <h4>Contact us</h4> <!--TODO Lägg till en länk-->
+      </section>  
+    </div>  
+</body>
+</html>
