@@ -8,16 +8,34 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Scope+One&display=swap" rel="stylesheet">
+  <!--Ikonen för hamburgermenyn-->
+  <script src="https://kit.fontawesome.com/c5867c9610.js" crossorigin="anonymous"></script>
 
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="styleWeAre.css"> 
-  <title>We are</title>
+  <title>About Us</title>
 </head>
 <body>
-  <nav><h1>Här ska det läggas in kod</h1></nav>
-    <div id="title">
-      <h1> We Are</h1>
-    </div>
- 
+  <header>
+    <nav>
+      <div class="logo-container">
+      <label class="logo-txt">HILD</label>
+      </div>
+      <input type="checkbox" id="check">
+      <label for="check" class="hamburger-btn">
+       <i class="fas fa-bars"></i>
+      </label>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="weAre.html">About us</a></li>
+        <li><a href="Portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="aboutUs">
+    <div id="title"><h1>We are</h1></div>
+
   <div class="container">
     <div class="box">
         <div class="imgBox">
@@ -54,7 +72,8 @@
         <a href="./personLotta.html"><h2>Lotta Lindberg<br>
          <span> Frontend developer</span></h2></a>
       </div>
+   </div>
   </div>
-</div>
+</main>
 </body>
 </html>
