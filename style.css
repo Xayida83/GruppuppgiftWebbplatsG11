@@ -1,0 +1,287 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* Mobile first*/
+body{
+
+  margin:0;
+  padding:0;
+  width:100%;
+  background: linear-gradient(
+  
+    #0081A7 30%, #00AFB9
+ );
+ background-repeat:no-repeat
+ 
+}
+.welcome{
+  display:flex;
+  margin-top:7rem;
+  justify-content: center;
+   color:#333;
+   font-family: "Rozha One", serif;
+   font-weight: bolder;
+   letter-spacing:2px;
+   font-size:25px;
+   animation:text 3s 1;
+ }
+ @keyframes text {
+   0%{
+     
+     margin-top: -40px;
+   }
+   30%{
+     letter-spacing: 4px;
+     margin-top: -40px;
+   }
+   
+ }
+  
+  .main-text{
+     
+      display:flex;
+      flex-direction: column;
+      justify-items:center;
+      font-family: "Rozha One", serif;
+      font-weight: bold;
+       text-align: center ;
+       color: #333;
+       padding: 5%;
+       margin: 0px;
+     }
+
+   .image{
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     margin: 10px auto;
+     background: #026a8a;
+     padding:5px;
+     width: 90%;
+     }
+   
+     
+     .icons{
+      display:flex;
+      flex-direction: center;
+
+     }
+     .icons img{
+       animation-duration: 4s;
+       animation-name: slidein;
+       max-width:40%;
+       margin:34%;
+       -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.2));
+  }
+ @keyframes slidein {
+   from {
+     margin-left: 100%;
+     width: 300%;
+   }
+ 
+   to {
+     margin-left: 34% ;
+     width: 100%;
+   }
+ }
+ 
+  footer {
+  display:flex;
+  justify-content: center;
+  margin-bottom: 5px;
+  color: #FED9B7;
+  font-family: 'Times New Roman', Times;
+  font-size:15px;
+   padding: 3px;
+   break-after: always;
+  }
+/* small devices *tablets and large phons--------------------------*/
+@media only screen and (min-width: 600px) {
+  .welcome{
+     margin-top:3rem;
+     color:#333;
+     font-family: "Rozha One", serif;
+     font-weight: bolder;
+     letter-spacing:2px;
+     font-size:35px;
+     animation:text 3s 1;
+   }
+
+   @keyframes text {
+     0%{
+    
+       margin-top: -40px;
+     }
+     30%{
+       letter-spacing: 10px;
+      
+       margin-top: -40px;
+     }
+     
+   }
+    
+    .main-text{
+        border-radius: 20px;
+        display:flex;
+        flex-direction: column;
+        justify-items:center;
+        font-family: "Rozha One", serif;
+        font-size: large;
+        font-weight: bold;
+         text-align: center ;
+         padding: 5%;
+         margin: 20px;
+       }
+  
+     .image{
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       margin: 10px auto;
+       background: #FED9B7;
+       padding:5px;
+       width: 90%;
+       }
+     
+       .icons{
+        display:flex;
+        flex-direction: center;
+  
+       }
+       .icons img{
+         animation-duration: 4s;
+         animation-name: slidein;
+         max-width:35%;
+         margin:34%;
+         -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.2));
+    }
+   @keyframes slidein {
+     from {
+       margin-left: 100%;
+       width: 300%;
+     }
+   
+     to {
+       margin-left: 34% ;
+       width: 100%;
+     }
+   }
+ 
+   
+    footer {
+    display:flex;
+    justify-content: center;
+    margin-bottom: 0,5rem;
+    font-family: 'Times New Roman', Times;
+    font: size 1rem;;
+     padding: 3px;
+     break-after: always;
+    }
+ 
+}
+/*Large devices *laptops&desktops-----------------------------------*/
+@media only screen and (min-width: 992px) {
+
+  .main-text{
+    display:flex;
+    justify-items:center;
+    font-family: "Rozha One", serif;
+    font-weight: bold;
+    font-size: 2rem;
+     text-align: center ;
+     margin:0px;
+     }
+  .welcome{
+    display:flex;
+    margin:100px;
+    justify-content: center;   
+     font-family: "Rozha One", serif;
+     font-weight: bolder;
+     font-size: 3rem;
+     letter-spacing:1rem;
+     animation:text 3s 1;
+   }
+   @keyframes text {
+     0%{
+       
+       margin-top: -40px;
+     }
+     30%{
+       letter-spacing: 6px;
+       margin-top: -40px;
+     }
+     
+   }
+    
+    
+  
+     .image{
+      align-self: center;
+       margin:auto; 
+       padding:10px;
+       width:80%;
+       height: 20%;
+       object-fit: cover;
+       box-shadow: 0 8px 16px 0 rgb(2, 106, 138), 0 6px 20px 0 rgba(0,0,0,0.30);
+       }
+     
+       .icons{
+       display:flex;
+      justify-content:space-between ;
+       flex-direction: row;
+        margin-left: 10%;
+       margin-right: 10%;
+     
+      }
+      .icons img:hover {
+
+        border-radius:35px;
+        box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+      }
+      .icons img{
+        animation-duration: 4s;
+        animation-name: slidein;
+        max-width:20%;
+        margin: 10%;
+        -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.2));
+   }
+ @keyframes slidein {
+   from {
+     margin-left: 100%;
+    
+   }
+ 
+   to {
+     margin-left: 10% ;
+     width: 100%;
+   }
+ }
+   
+    footer {
+    font-family: 'Times New Roman', Times;
+    font-size:1rem;
+    text-align: center;
+    padding: 3px;
+    bottom:0;
+    width: 100%;
+    }
+}
+  
