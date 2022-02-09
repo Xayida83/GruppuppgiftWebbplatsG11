@@ -1,73 +1,133 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
 }
 body {
-	line-height: 1;
-	background: linear-gradient(#0081A7 20%, #00AFB9);
+  margin:0;
+  background: linear-gradient(#0081A7 10%, #00AFB9 );
+  background-repeat: no-repeat;
+  color: #333333;
 }
 
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-
-.container {
-	height: calc(100% - 20px);
-	width: calc(100% - 20px);
-	margin: 0;
-	padding: 10px;
+.lotta-main{
 	display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-}
-header {
-  font-size: 4vw;
-  background: #FED9B7;
-  width: 100%;
-  height: 70px;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	position: relative;
+	row-gap: 30px;
+	margin: calc(30vh - 200px) auto;
 }
 .imgBox {
   display: flex;
-  justify-content: center;
+	justify-content: center;
+	margin-top: 7rem;
 }
 .imgBox img {
   width: 40%;
   height: 40%;
   border-radius: 50%;
-  margin-top: 10px;
 }
-.accordion {
-	margin: 40px 10px;
-	width: 100%;
+.containerProgressbar {
+  max-width: 400px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  margin: 20px 0px;
 }
-.accordion input {
+.skill {
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+.outer{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), -6px -6px 10px -1px rgba(255,255,255,0.7);
+}
+.inner {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*border: 1px solid #333333;*/
+  box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+  inset 4px 4px 6px -1px rgba(255,255,255,0.7),
+  0.5px 0.5px 0px rgba(255,255,255,1),
+  0px 12px 10px -10px rgba(0,0,0,0.5);
+}
+.language {
+  font-family:'Times New Roman', Times, serif;
+  font-size: 90%;
+  color: #333333;
+}
+#left-skill-circle{
+  fill: none;
+  stroke: url(#GradientColorLeft);
+  stroke-width: 10px;
+  stroke-dasharray: 236;
+  stroke-dashoffset: 236;
+  animation: left 2s linear forwards;
+}
+#middle-skill-circle{
+  fill: none;
+  stroke: url(#GradientColorMiddle);
+  stroke-width: 10px;
+  stroke-dasharray: 236;
+  stroke-dashoffset: 236;
+  animation: middle 2s linear forwards;
+}
+#right-skill-circle{
+  fill: none;
+  stroke: url(#GradientColorRight);
+  stroke-width: 10px;
+  stroke-dasharray: 236;
+  stroke-dashoffset: 236;
+  animation: right 2s linear forwards;
+}
+svg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+ 
+}
+/*Uträkning exempel: 236 - 30% = skriv den summan på stroke-dashoffset */
+@keyframes left {
+  100%{
+    stroke-dashoffset: 82.6;
+  }
+}
+@keyframes middle {
+  100%{
+    stroke-dashoffset: 165.2;
+  }
+}
+@keyframes right {
+  100%{
+    stroke-dashoffset: 47.2;
+  }
+}
+/*Här startar accordion menu*/
+.accordionContainer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+  row-gap: 0.5rem;
+	margin: 0 1rem 3rem 1rem;
+	width: 90%;
+}
+
+.accordionContainer input {
 	display: none;
 }
 .box {
@@ -86,24 +146,27 @@ header {
     left: 0;
     right: 0;
     pointer-events: none;
-    box-shadow: 0 -1px 0 #e5e5e5,0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
+    box-shadow: 0 0 6px rgba(0,0,0,.16),0 6px 12px rgba(0,0,0,.32);
+   /* box-shadow: 0 -1px 0 #e5e5e5,0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);*/
 }
 header.box {
   font-family: "Rozha One", serif;
 	background: #F07167;
-	z-index: 1;
-	box-shadow: 0 -1px 0 #e5e5e5,0 0 2px -2px rgba(0,0,0,.12),0 2px 4px -4px rgba(0,0,0,.24);
+  box-shadow: 0 0 6px rgba(0,0,0,.16),0 6px 12px rgba(0,0,0,.32);
+	/*box-shadow: 0 -1px 0 #e5e5e5,0 0 2px -2px rgba(0,0,0,.12),0 2px 4px -4px rgba(0,0,0,.24);*/
+	
 }
 header .box-title {
 	margin: 0;
 	font-weight: normal;
-	font-size: 200%;
+	font-size: 6vw;
 	color: #333333;
   width: 100%;
 }
 .box-title {
-  font-family: "Rozha One", serif;
-  font-size: 200%;
+	font-family: "Rozha One", serif;
+	font-size: 5vw;
+	color: #333333;
 	width: 100%;
 	height: 64px;
 	line-height: 64px;
@@ -116,7 +179,7 @@ header .box-title {
 	width: 100%;
 	padding: 30px 20px;
   font-family: 'Times New Roman', Times, serif;
-	font-size: 5vw;
+	font-size: 1rem;
 	color: #252525;
 	display: none;
 }
@@ -141,21 +204,11 @@ input:checked + .box .box-content,
 input:checked + .box .box-close {
 	display: inline-block;
 }
-/*.arrows section .box-title {
-	padding-left: 44px;
-	width: 100%;
-}*/
-/*.arrows section .box-title:before {
-	position: absolute;
-	display: block;
-	content: '\203a';
-	font-size: 18pt;
-	left: 20px;
-	top: -2px;
-	transition: transform .15s ease-in-out;
-	color: rgba(0,0,0,.54);
-}*/
+
 input:checked + section.box .box-title:before {
 	transform: rotate(90deg);
 }
 
+@media only screen and (min-width: 600px) {
+	
+}
