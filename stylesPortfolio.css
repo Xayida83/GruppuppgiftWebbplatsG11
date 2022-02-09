@@ -1,53 +1,10 @@
-/*NAVBAR CSS*/
-ul{
-  display: flex;
-  list-style-type: none;
-  margin: 0;
+*{
   padding: 0;
-  overflow: hidden;
-  background-color: #f07167;
-  justify-content: center;
-}
-
-#logo{
-  margin-top: 10px;
-  margin-left: 20px;
-  position: absolute;
-}
-
-li a{
-  display: inline-block;
-  color: navy;
-  text-align: center;
-  padding: 20px 16px;
+  margin: 0;
   text-decoration: none;
-  font-size: large;
+  list-style: none;
+  box-sizing: border-box;
 }
-
-li a:hover{
-  background-color: blueviolet;
-  transition: 1s;
-  color:blanchedalmond;  
-}
-
-.active{
-  color: black;
-  font-weight: bold;
-}
-
-/*SECTION COLOURS*/
-#welcome-section {
-  background-color: #00AFB9;
-}
-
-#projects-section {
-  background-color: #FED9B7;
-}
-
-#contact-us-section {
-  background-color: #f07167;
-}
-
 /*FONT*/
 h1, h4, h2 {
   font-family: "Rozha One", serif;
@@ -60,22 +17,39 @@ h3, h5 {
 .project-title {
   font-family: "Times New Roman", Times, serif;
 }
-
-/*FLEXBOX*/
-.main-flex-container {
+/*Denna satte bakgrund på allt och text högst upp i mitten*/
+#projects-section {
+  background-color: #FED9B7;
+  display: flex;
+  flex-direction: column; /*ändrar allt*/
+  align-items: center; /*ändrar text över bild*/
+}
+/*Denna gör så att länk (bild och text) ligger i mitten*/
+.project-project-tile{
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-
+/*Sätter storleken på bilden*/
 img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
 }
 
+#welcome-section {
+  margin-top: 7rem;
+  text-align: center;
+}
+
+#contact-us-section {
+  background-color: #f07167;
+}
+.project-text {
+  width: 80%;
+}
+
 @media only screen and (min-width: 992px) {
-    #projects-section{
-      background-color: #0081A7;
-    }
+  
   }
 
 
