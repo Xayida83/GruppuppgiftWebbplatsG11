@@ -41,25 +41,64 @@ li a:hover{
   font-weight: bold;
 }
 
-/*SECTION COLOR*/
-section {
+/*BODY*/
+body {
   background-color: #00AFB9;
 }
+/*MAIN*/
+.main-flex-container {
+  display: flex;
+  flex-direction: column; /*Behövs den här?*/
+}
 
-/*FONT*/
+/*PICTURE SECTION*/
+#picture-section {
+  background-color: #f07167;
+  width: fit-content;
+  font-size: medium;
+  padding: 10px;
+  margin: 30px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*TEXT SECTION*/
+
+#top-of-text {
+  background-color: #f07167;
+  font-size: small;
+  text-align: center;
+  margin: 10px;
+}
+
+h3 {
+  background-color: #f07167;
+  padding: 50px;
+  font-size: medium;
+  margin: 10px;
+}
+
 h1,h2 {
   font-family: "Rozha One", serif;
+
 }
 p {
   font-family: "Times New Roman", Times, serif;
 }
+/*SKILLS SECTION*/
+#skills-section {
+  background-color: #f07167;
+}
 
 /*PROGRESS BAR*/
-.container {
+.progress-bar-container {
   width: 100%;
   height: 50%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   justify-content: space-around;
@@ -125,7 +164,7 @@ svg{
   left: 0;
   align-items: center;
   justify-content: center;
- 
+  
 }
 /*Uträkning exempel: 236 - 30% = skriv den summan på stroke-dashoffset */
 @keyframes left {
@@ -144,33 +183,8 @@ svg{
   }
 }
 
-/*FLEXBOX*/
-.main-flex-container {
-  display: flex;
-  flex-direction: column; /*Hur får jag dem att funka på progress-cirklarna?*/
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-#skills-section{
-      flex-direction: column; /*Hur får jag dem att funka på progress-cirklarna?*/
-    }
-  
-
-
 @media only screen and (min-width: 992px) {
-  #skills-section{
+  .progress-bar-container{
       flex-direction: row;
     }
   }
-
-/*
-@media (min-width: 600px) {
-  .container {
-    width: 400px ;
-  }
-}
-*/
