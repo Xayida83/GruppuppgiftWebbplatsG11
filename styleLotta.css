@@ -3,10 +3,10 @@
   padding: 0;
   box-sizing: border-box
 }
+
 body {
   margin:0;
-  background: linear-gradient(#0081A7 10%, #00AFB9 );
-  background-repeat: no-repeat;
+  /*background: linear-gradient(#0081A7 10%, #00AFB9 );*/
   color: #333333;
 }
 
@@ -31,13 +31,11 @@ body {
 }
 /*Här är början på progressbar*/
 .containerProgressbar {
-  
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 20px 0px;
-  max-width: 3rem:
 }
 .skill {
   width: 80px;
@@ -126,7 +124,7 @@ svg{
 	position: relative;
   row-gap: 0.5rem;
 	margin: 0 1rem 3rem 1rem;
-	width: 90%;
+	/*width: 90%;*/
 }
 .accordionContainer input {
 	display: none;
@@ -213,26 +211,35 @@ input:checked + section.box .box-title:before {
     flex-flow: row wrap;
     align-content: space-around;
     justify-content: space-around;
-    row-gap: 3rem;
+   
   }
   .containerProgressbar {
     margin-top: 7rem;
     display: flex;
     align-content: space-between;
-    justify-content: space-evenly;
-    max-width: 400rem;
+    /*justify-content: space-evenly;*/
+   /* max-width: 400rem;*/
   }
   .imgBox img {
     width: 25rem;
     height: 25rem;
   }
   .accordionContainer {
-    max-width: 30rem;
+    max-width: 50rem;
   }
   header .box-title {
     font-size: 2rem;
   }
   .box-title {
     font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .mainPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: inherit;
   }
 }
