@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Ikonen för hamburgermenyn-->
+  <script src="https://kit.fontawesome.com/c5867c9610.js" crossorigin="anonymous"></script>
+  <!--Google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Scope+One&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styleLotta.css"> 
+  <link rel="stylesheet" href="stylenav.css">
+  
+  <title>Lotta</title>
+</head>
+<body class="aboutLotta" >
+  <header>
+    <nav>
+        <div class="logo-container">
+        <label class="logo-txt">HILD</label>
+        </div>
+        <input type="checkbox" id="check">
+        <label for="check" class="hamburger-btn">
+         <i class="fas fa-bars"></i>
+        </label>
+        <ul class="nav-list">
+          <li class="active"><a href="Index.html">Home</a></li>
+          <li><a href="weAre.html">About us</a></li>
+          <li><a href="Portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+      </ul>
+  </nav>
+</header>
+
+<main class="lotta-main">
+    <picture class="imgBox">
+        <img src="/mainpics/Lotta.jpg" alt="Charlotta Lindberg">
+    </picture>
+ <!--Progressbar och Accordion i samma div-->
+ <div class="mainPart">
+    <!--Här börjat progressbar-->
+    <div class="containerProgressbar">
+      <div class=skill>
+        <div class="outer">
+          <div class="inner">
+            <div class="language">CSS
+              <br> 65%</div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100px" height="100px">
+          <defs>
+             <linearGradient id="GradientColorLeft">
+                <stop offset="0%" stop-color="#FED9B7" />
+                <stop offset="100%" stop-color="#F07167" />
+             </linearGradient>
+          </defs>
+          <circle id="left-skill-circle" cx="40" cy="40" r="35" stroke-linecap="round" />
+        </svg>
+      </div>
+
+      <div class=skill>
+        <div class="outer">
+          <div class="inner">
+            <div class="language">HTML<br>
+            30%</div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100px" height="100px">
+          <defs>
+             <linearGradient id="GradientColorMiddle">
+                <stop offset="0%" stop-color="#FED9B7" />
+                <stop offset="100%" stop-color="#F07167" />
+             </linearGradient>
+          </defs>
+          <circle id="middle-skill-circle" cx="40" cy="40" r="35" stroke-linecap="round" />
+        </svg>
+      </div>
+
+      <div class=skill>
+        <div class="outer">
+          <div class="inner">
+            <div class="language">#C <br> 80%</div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100px" height="100px">
+          <defs>
+             <linearGradient id="GradientColorRight">
+                <stop offset="0%" stop-color="#FED9B7" />
+                <stop offset="100%" stop-color="#F07167" />
+             </linearGradient>
+          </defs>
+          <circle id="right-skill-circle" cx="40" cy="40" r="35" stroke-linecap="round" />
+        </svg>
+      </div>
+     </div> 
+    <!--Här börjar accordion-->
+    <div class="accordionContainer">
+		<header class="box">
+			<label for="acc-close" class="box-title">Charlotta Lindberg</label>
+		</header>
+		<input type="radio" name="accordion" id="cb1" />
+		<section class="box">
+			<label class="box-title" for="cb1">About me</label>
+			<label class="box-close" for="acc-close"></label>
+			<div class="box-content">Click on an item to open. Click on its header or the list header to close. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, laborum. </div>
+		</section>
+		<input type="radio" name="accordion" id="cb2" />
+		<section class="box">
+			<label class="box-title" for="cb2">Social media</label>
+			<label class="box-close" for="acc-close"></label>
+			<div class="box-content"> Linked in - link <br> codepen -link <br> git portfölj -link</div>
+		</section>
+		<input type="radio" name="accordion" id="cb3" />
+		<section class="box">
+			<label class="box-title" for="cb3">Contact me</label>
+			<label class="box-close" for="acc-close"></label>
+			<div class="box-content">Email: lotta.lindberg@gmail.com<br> Phonenumber: 072 992 17 05 <br>
+        <a href="./contact.html">Contuct Us form</a></div>
+		</section>
+		<input type="radio" name="accordion" id="acc-close" />
+	</div>
+</div>
+</main>
+</body>
+</html>

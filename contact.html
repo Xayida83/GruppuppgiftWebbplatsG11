@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Ikonen för hamburgermenyn-->
+  <script src="https://kit.fontawesome.com/c5867c9610.js" crossorigin="anonymous"></script>
+   <!--Google font-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Scope+One&display=swap" rel="stylesheet">
+ 
+   <link rel ="stylesheet" href="stylecontact.css"/>
+   <link rel="stylesheet" href="stylenav.css">
+  <title>ContactUs</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo-container">
+      <label class="logo-txt">HILD</label>
+      </div>
+      <input type="checkbox" id="check">
+      <label for="check" class="hamburger-btn">
+       <i class="fas fa-bars"></i>
+      </label>
+      <ul class="nav-list">
+        <li ><a href="index.html">Home</a></li>
+        <li><a href="weAre.html">About us</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li class="active"><a href="contact.html">Contact us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <form onsubmit="return false">
+      <h2>CONTACT US</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Write your name here..">
+      <label for="number">Phonenumber:</label>
+      <input type="tel" id="number" name="number" placeholder="0701234567" pattern="[0-9]{10}">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="We want to answer you">
+      <input type="checkbox" required id="newCustomer"/><span id="checkboxText">Are you human?</span>
+      <label for="message">Message:</label>
+      <textarea id="message" placeholder="  What would you like to tell us.." rows = "5" ></textarea>
+      <!--<button id="submit" onclick="sendContact();">Send Message</button>-->
+      <!--input type="reset" id="submit"  value="Send Message">-->
+      <input type="submit" id="submit"  value="Send Message">
+   </form>
+ </main>
+ <script src="script.js">
+</script>
+</body>
+
+</html>
