@@ -5,7 +5,21 @@
   list-style: none;
   box-sizing: border-box;
 }
-/*FONT*/
+
+/*BODY*/
+body {
+  background-color: #00AFB9;
+}
+
+/*MAIN*/
+/*WELCOME SECTION (we are HILD developers)*/
+
+#welcome-section {
+  margin-top: 7rem;
+  text-align: center;
+}
+
+/*font allmän*/
 h1, h4, h2 {
   font-family: "Rozha One", serif;
 }
@@ -14,18 +28,24 @@ h3, h5 {
   font-family: "Times New Roman", Times, serif;
 }
 
-.project-title {
-  font-family: "Times New Roman", Times, serif;
-}
+/*PROJECTS SECTION*/
+
 /*Denna satte bakgrund på allt och text högst upp i mitten*/
 #projects-section {
-  background-color: #FED9B7;
   display: flex;
   flex-direction: column; /*ändrar allt*/
   align-items: center; /*ändrar text över bild*/
 }
+
+.project-text {
+  width: 80%;
+}
+
+.project-title {
+  font-family: "Times New Roman", Times, serif;
+}
 /*Denna gör så att länk (bild och text) ligger i mitten*/
-.project-project-tile{
+.project-project-title {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,16 +56,10 @@ img {
   height: auto;
 }
 
-#welcome-section {
-  margin-top: 7rem;
-  text-align: center;
-}
+/*CONTACT US SECTION*/
 
 #contact-us-section {
   background-color: #f07167;
-}
-.project-text {
-  width: 80%;
 }
 
 @media only screen and (min-width: 992px) {

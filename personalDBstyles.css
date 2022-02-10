@@ -22,7 +22,6 @@ body {
 
 /*PICTURE SECTION*/
 #picture-section {
-  background-color: #f07167;
   width: fit-content;
   font-size: medium;
   padding: 10px;
@@ -37,14 +36,12 @@ img {
 /*TEXT SECTION*/
 
 #top-of-text {
-  background-color: #f07167;
   font-size: small;
   text-align: center;
   margin: 10px;
 }
 
 h3 {
-  background-color: #f07167;
   padding: 50px;
   font-size: medium;
   margin: 10px;
@@ -59,7 +56,6 @@ p {
 }
 /*SKILLS SECTION*/
 #skills-section {
-  background-color: #f07167;
 }
 
 /*PROGRESS BAR*/
