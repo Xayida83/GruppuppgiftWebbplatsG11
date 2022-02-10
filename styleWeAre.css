@@ -6,7 +6,6 @@
   box-sizing: border-box;
 }
 
-
 body {
   position: relative; 
   display: flex;
@@ -30,7 +29,6 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
-
 .container .box {
   position: relative;
   width: 20rem;

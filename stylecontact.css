@@ -1,8 +1,4 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box
-}
+
 
 form {
   width: 340px;
@@ -87,6 +83,3 @@ input {
   color: #FED9B7;
 }
 
-@media only screen and (min-width: 600px) {
- 
-}
