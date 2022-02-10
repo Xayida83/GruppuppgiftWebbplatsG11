@@ -56,7 +56,6 @@ body{
  }
   
   .main-text{
-     
       display:flex;
       flex-direction: column;
       justify-items:center;
@@ -73,9 +72,10 @@ body{
      justify-content: center;
      flex-direction: column;
      margin: 10px auto;
-     background: #026a8a;
+     background: #FED9B7;
      padding:5px;
      width: 90%;
+     box-shadow: 0px 6px 15px 2px #8b8eaf;
      }
    
      
@@ -116,7 +116,7 @@ body{
 /* small devices *tablets and large phons--------------------------*/
 @media only screen and (min-width: 600px) {
   .welcome{
-     margin-top:3rem;
+     margin-top:8rem;
      color:#333;
      font-family: "Rozha One", serif;
      font-weight: bolder;
@@ -156,7 +156,7 @@ body{
        justify-content: center;
        flex-direction: column;
        margin: 10px auto;
-       background: #FED9B7;
+       
        padding:5px;
        width: 90%;
        }
@@ -201,17 +201,24 @@ body{
 @media only screen and (min-width: 992px) {
 
   .main-text{
-    display:flex;
-    justify-items:center;
+    display:flexbox;
+    flex-direction: row-reverse;
+    justify-content:space-between;
     font-family: "Rozha One", serif;
-    font-weight: bold;
+
     font-size: 2rem;
-     text-align: center ;
-     margin:0px;
+    text-align: center ;
+    margin:2rem;
      }
+
+     h2{
+       margin-bottom: 2rem;
+       font-size: 3rem;
+     }
+     
   .welcome{
-    display:flex;
-    margin:100px;
+
+    margin-top:8rem;
     justify-content: center;   
      font-family: "Rozha One", serif;
      font-weight: bolder;
@@ -231,28 +238,27 @@ body{
      
    }
     
-    
-  
      .image{
       align-self: center;
-       margin:auto; 
+       margin-right:1rem; 
        padding:10px;
-       width:80%;
-       height: 20%;
+       width:40rem;
+       height: 25rem;
        object-fit: cover;
-       box-shadow: 0 8px 16px 0 rgb(2, 106, 138), 0 6px 20px 0 rgba(0,0,0,0.30);
+       box-shadow: 0px 6px 15px 2px #8b8eaf;
        }
      
        .icons{
        display:flex;
-      justify-content:space-between ;
+       align-content: center;
+       justify-content:space-between ;
        flex-direction: row;
-        margin-left: 10%;
+       margin-left: 10%;
        margin-right: 10%;
-     
+       margin-bottom: 2.1rem;
+   
       }
       .icons img:hover {
-
         border-radius:35px;
         box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
       }
