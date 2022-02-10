@@ -1,44 +1,9 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-/*NAVBAR CSS*/
-ul{
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #f07167;
-  justify-content: center;
-}
-
-#logo{
-  margin-top: 10px;
-  margin-left: 20px;
-  position: absolute;
-}
-
-li a{
-  display: inline-block;
-  color: navy;
-  text-align: center;
-  padding: 20px 16px;
   text-decoration: none;
-  font-size: large;
-}
-
-li a:hover{
-  background-color: blueviolet;
-  transition: 1s;
-  color:blanchedalmond;  
-}
-
-.active{
-  color: black;
-  font-weight: bold;
+  list-style: none;
+  box-sizing: border-box;
 }
 
 /*BODY*/
@@ -46,6 +11,10 @@ body {
   background-color: #00AFB9;
 }
 /*MAIN*/
+.personal-daniela-main {
+  margin-top: 4rem;
+}
+
 .main-flex-container {
   display: flex;
   flex-direction: column; /*Behövs den här?*/
