@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background: linear-gradient(#0081A7 10%, #00AFB9 )
+    background: linear-gradient(#0081A7 10%, #00AFB9);
     font-family: 'Rozha One', serif;
 }
 ul a{
