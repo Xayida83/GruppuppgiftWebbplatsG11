@@ -1,12 +1,15 @@
 /* ----------------------------- */
 /*        My personal site       */
 /* ----------------------------- */
-
-.about{
-    /* background-color: #33bbc0; */
-    background-color: #0081A7;
+body{
     background-size: cover;
 }
+/* .about{
+    background-color: #33bbc0; 
+    background-color: #0081A7;
+    background-size: cover;
+} */
+
 img.roundedCorner{
     border-radius: 50%;
     width: 60%;
@@ -66,11 +69,17 @@ img.roundedCorner{
 .btn:hover::after{
     transform: translate(-5px, -5px);
 }
+ /* .container{
+    display: flex; 
+     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}  */
 
 /* Charlottas progressbar */
-.containerProgressbar {
+.progressbar {
     max-width: 400px;
-    display: flex;
+    display: flex; 
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -161,7 +170,7 @@ img.roundedCorner{
 @media only screen and (min-width: 992px) {
 
     .container{
-        display: flex;
+        display: flex; 
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
@@ -195,8 +204,16 @@ img.roundedCorner{
         top: 3rem;
 
     }
-    .containerProgressbar {
+     .progressbar {
         flex-direction: column;
-    }
+    } 
 
+    /* .skills-container{
+        display:flex;
+        flex-direction: row;
+        justify-items: center;
+        margin-left: 5%;
+        margin-right: 10%;
+     
+      } */
 }
