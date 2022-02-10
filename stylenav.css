@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background: linear-gradient(#0081A7 10%, #00AFB9 )
+    background: linear-gradient(#0081A7 10%, #00AFB9);
     font-family: 'Rozha One', serif;
 }
 ul a{
@@ -126,92 +126,3 @@ nav{
     
 }
 
-/* ----------------------------- */
-/*        My personal site       */
-/* ----------------------------- */
-
-.about{
-    background-color: #33bbc0;
-    background-size: cover;
-}
-img.roundedCorner{
-    border-radius: 50%;
-    width: 60%;
-    display: flex;
-    margin: 20% auto; 
-    position: relative;
-    top: 3.5rem;
-} 
-
-.name{
-    display: flex;
-    justify-content: center;
-    width: 200px;
-    padding: 1rem;
-    margin: auto;
-
-}
-.personal-info{
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-    width: 200px;
-    Margin: auto;
-    
-} 
-.btn-container{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.buttons{
-    display: flex;
-    flex-direction: column;
-}
-.btn{
-    text-decoration: none;
-    padding: 15px 40px;
-    font-size: 1.25rem;
-    position: relative;
-     margin: 20px; 
-     background-color: #FDFCDC;
-     color: #333333;
-     border-radius: 30px;
-     transition: transform 0.3s ease;
-    
-}
-
-/* FOR DESKTOP */
-@media only screen and (min-width: 992px) {
-
-    .container{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    img.roundedCorner{
-        border-radius: 50%;
-        width: 400px;
-        display: block;
-        margin: 20% 0%;
-    } 
-    .name{
-        margin-top: 20%;
-        justify-content: center;
-        position: relative;
-        right: 4rem;
-    }
-    .personal-info{
-        display: inline-block;
-        justify-content: center;
-        padding: 3rem;
-        width: 400px;
-        Margin: 20px;
-        position: relative;
-        bottom: 50px;
-
-    } 
-
-
-}
