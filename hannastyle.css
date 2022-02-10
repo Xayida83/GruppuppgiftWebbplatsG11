@@ -1,0 +1,202 @@
+/* ----------------------------- */
+/*        My personal site       */
+/* ----------------------------- */
+
+.about{
+    /* background-color: #33bbc0; */
+    background-color: #0081A7;
+    background-size: cover;
+}
+img.roundedCorner{
+    border-radius: 50%;
+    width: 60%;
+    display: flex;
+    margin: 20% auto; 
+    position: relative;
+    top: 3.5rem;
+} 
+
+.name{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    padding: 1rem;
+    margin: auto;
+
+}
+.personal-info{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    width: 200px;
+    Margin: auto;
+    
+} 
+.btn-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 20px 50px;
+    position: relative;
+    font-size: 1.25rem;
+    color: #333333;
+    margin: 25px;
+}
+.btn::after, .btn::before{
+    border: 3px solid #111;
+    content: "";
+    position: absolute;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+    
+}
+.btn:hover::after{
+    transform: translate(-5px, -5px);
+}
+
+/* Charlottas progressbar */
+.containerProgressbar {
+    max-width: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    margin: 20px 10px;
+  }
+  .skill {
+    width: 80px;
+    height: 80px;
+    position: relative;
+  }
+  .outer{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), -6px -6px 10px -1px rgba(255,255,255,0.7);
+  }
+  .inner {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border: 1px solid #333333;*/
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+    inset 4px 4px 6px -1px rgba(255,255,255,0.7),
+    0.5px 0.5px 0px rgba(255,255,255,1),
+    0px 12px 10px -10px rgba(0,0,0,0.5);
+  }
+  .language {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 90%;
+    color: #333333;
+  }
+  #left-skill-circle{
+    fill: none;
+    stroke: url(#GradientColorLeft);
+    stroke-width: 10px;
+    stroke-dasharray: 236;
+    stroke-dashoffset: 236;
+    animation: left 2s linear forwards;
+  }
+  #middle-skill-circle{
+    fill: none;
+    stroke: url(#GradientColorMiddle);
+    stroke-width: 10px;
+    stroke-dasharray: 236;
+    stroke-dashoffset: 236;
+    animation: middle 2s linear forwards;
+  }
+  #right-skill-circle{
+    fill: none;
+    stroke: url(#GradientColorRight);
+    stroke-width: 10px;
+    stroke-dasharray: 236;
+    stroke-dashoffset: 236;
+    animation: right 2s linear forwards;
+  }
+  svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    
+   
+  }
+  /*Uträkning exempel: 236 - 30% = skriv den summan på stroke-dashoffset */
+  @keyframes left {
+    100%{
+      stroke-dashoffset: 82.6;
+    }
+  }
+  @keyframes middle {
+    100%{
+      stroke-dashoffset: 165.2;
+    }
+  }
+  @keyframes right {
+    100%{
+      stroke-dashoffset: 47.2;
+    }
+  }
+
+/* FOR DESKTOP */
+@media only screen and (min-width: 992px) {
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    img.roundedCorner{
+        border-radius: 50%;
+        width: 300px;
+        display: block;
+        margin: 40% 0%;
+    } 
+    .name{
+        margin-top: 40%;
+        justify-content: center;
+        position: relative;
+        right: 4rem;
+    }
+    .personal-info{
+        display: inline-block;
+        justify-content: center;
+        padding: 3rem;
+        width: 400px;
+        Margin: 20px;
+        position: relative;
+        bottom: 50px;
+
+    } 
+    .btn{
+        padding: 5px 20px;
+        font-size: 1.2rem;
+        position: relative;
+        top: 3rem;
+
+    }
+    .containerProgressbar {
+        flex-direction: column;
+    }
+
+}
