@@ -19,7 +19,7 @@ h3, h5 {
 }
 /*Denna satte bakgrund på allt och text högst upp i mitten*/
 #projects-section {
-  background-color: #FED9B7;
+
   display: flex;
   flex-direction: column; /*ändrar allt*/
   align-items: center; /*ändrar text över bild*/

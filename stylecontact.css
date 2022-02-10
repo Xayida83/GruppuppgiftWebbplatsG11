@@ -1,8 +1,7 @@
-body {
-  margin:0;
-  background: linear-gradient(#0081A7 10%, #00AFB9 );
-  background-repeat: no-repeat;
-  color: #333333;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
 }
 
 form {
@@ -18,7 +17,6 @@ form {
   font-family: "Rozha One", serif;
   font-size: larger;
   position: relative;
-
 }
 form h2 {
   margin: 10px 0;
@@ -88,8 +86,6 @@ input {
   background: #0081A7;
   color: #FED9B7;
 }
-
-
 
 @media only screen and (min-width: 600px) {
  
