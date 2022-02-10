@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Jscript-->
+     <script src="https://kit.fontawesome.com/c5867c9610.js" crossorigin="anonymous"></script>
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!--Google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Scope+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="imadStyle.css">
+  <link rel="stylesheet" href="Navstyle.css">
+    <title>Imad Yousef</title>
+</head>
+<body>
+    <header>
+      <nav>
+        <div class="logo-container">
+          <label class="logo-txt">HILD</label>
+        </div>
+        <input type="checkbox" id="check">
+        <label for="check" class="hamburger-btn">
+          <i class="fas fa-bars"></i> </label>
+          
+          <ul class="nav-list">
+            <li class="active"><a href="Index.html">Home</a></li>
+            <li><a href="About.html">About us</a></li>
+            <li><a href="Portfolio.html">Portfolio</a></li>
+            <li><a href="Contact.html">Contact us</a></li>     
+          </ul>   
+        </nav>
+      </header>
+    <section class="imad">
+        <img
+          src="mainpics/Imad.jpg"
+          alt="Imad-Yousef"
+          loading="lazy"
+          class="Imad-img"
+        />
+        <div class="About">
+          <h2 class="About-title" >About Me</h2>
+          <p class="About-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
+            dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
+            inventore tempore minus nemo, iste ullam illo laboriosam maiores
+            repudiandae quos!
+          </p>
+        </div>
+  </section> 
+  <section class="more-about">
+    <h2>More About Me</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+      nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
+      autem deleniti cupiditate molestias quis unde quae totam porro dicta
+      iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
+      nostrum dolor minus, libero delectus praesentium perferendis
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+      consequuntur labore? Ea totam voluptas amet!
+    </p>
+  </section>
+  <section class="skills-container">
+  <figure class="skills" id="skills">
+    <h2 class="skill-header">My Top Skills</h2>
+
+    <div class="skills-wrapper">
+      <div class="first-set animate__animated animate__pulse">
+        <img
+          src="icons/css.png"
+          alt=" Adobe Photoshop icon"
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="icons/sql-server.png"
+          alt="Adobe premiere icon"
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="icons/c-sharp.png"
+          alt="Adobe Aftereffect icon"
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+
+    </div>
+  </figure>
+  <!--Lottas skills progressBar-->
+  
+  <div class="progress-container">
+    <div class=progress>
+      <div class="outer">
+        <div class="inner">
+          <div class="language">CSS
+            <br> 85%</div>
+        </div>
+      </div>
+    
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100px" height="100px">
+        <defs>
+           <linearGradient id="GradientColor1">
+              <stop offset="0%" stop-color="#e91e63" />
+              <stop offset="100%" stop-color="#673ab7" />
+           </linearGradient>
+        </defs>
+        <circle id="left-progress-circle" cx="40" cy="40" r="35" stroke-linecap="round" />
+      </svg>
+  
+    </div>
+    <div class=progress>
+      <div class="outer">
+        <div class="inner">
+          <div class="language">SQL<br>
+          30%</div>
+        </div>
+      </div>
+  
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100px" height="100px">
+        <defs>
+           <linearGradient id="GradientColor2">
+              <stop offset="0%" stop-color="#e91e63" />
+              <stop offset="100%" stop-color="#673ab7" />
+           </linearGradient>
+        </defs>
+        <circle id="middle-progress-circle" cx="40" cy="40" r="35" stroke-linecap="round" />
+      </svg>
+  
+    </div>
+    <div class=progress>
+      <div class="outer">
+        <div class="inner">
+          <div class="language">#C <br> 80%</div>
+        </div>
+      </div>
+  
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100px" height="100px">
+        <defs>
+           <linearGradient id="GradientColor3">
+              <stop offset="0%" stop-color="#e91e63" />
+              <stop offset="100%" stop-color="#673ab7" />
+           </linearGradient>
+        </defs>
+        <circle id="right-progress-circle" cx="40" cy="40" r="35" stroke-linecap="round" />
+      </svg>
+  
+    </div>
+  </div>
+    
+    </section>
+</body>
+</html>
