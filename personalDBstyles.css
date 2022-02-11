@@ -17,15 +17,15 @@ body {
 
 .main-flex-container {
   display: flex;
-  flex-direction: column; /*Behövs den här?*/
+  flex-direction: column;
 }
 
 /*PICTURE SECTION*/
 #picture-section {
   width: fit-content;
   font-size: medium;
-  padding: 10px;
-  margin: 30px;
+  padding-top: 70px;
+  margin-bottom: 30px;
 }
 
 img {
@@ -41,10 +41,11 @@ img {
   margin: 10px;
 }
 
-h3 {
+h3, p {
   padding: 50px;
   font-size: medium;
   margin: 10px;
+  text-align: center;
 }
 
 h1,h2 {
@@ -152,4 +153,9 @@ svg{
   .progress-bar-container{
       flex-direction: row;
     }
+
+  #picture-section {
+    padding: 0px;
+    margin-top: -300px;
   }
+}
