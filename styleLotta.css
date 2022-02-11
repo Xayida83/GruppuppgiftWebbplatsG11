@@ -204,12 +204,6 @@ input:checked + section.box .box-title:before {
     max-width: 50rem;
     margin-bottom: 13rem;
   }
-  header .box-title {
-    font-size: 2rem;
-  }
-  .box-title {
-    font-size: 2rem;
-  }
 }
 @media only screen and (min-width: 1000px) {
   .mainPart {
@@ -222,5 +216,8 @@ input:checked + section.box .box-title:before {
   .accordionContainer {
     max-width: 50rem;
     margin-bottom: 13rem;
+  }
+  .box-content {
+    max-width: 50rem;
   }
 }
