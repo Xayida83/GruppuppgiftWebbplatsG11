@@ -1,44 +1,9 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-/*NAVBAR CSS*/
-ul{
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #f07167;
-  justify-content: center;
-}
-
-#logo{
-  margin-top: 10px;
-  margin-left: 20px;
-  position: absolute;
-}
-
-li a{
-  display: inline-block;
-  color: navy;
-  text-align: center;
-  padding: 20px 16px;
   text-decoration: none;
-  font-size: large;
-}
-
-li a:hover{
-  background-color: blueviolet;
-  transition: 1s;
-  color:blanchedalmond;  
-}
-
-.active{
-  color: black;
-  font-weight: bold;
+  list-style: none;
+  box-sizing: border-box;
 }
 
 /*BODY*/
@@ -48,16 +13,15 @@ body {
 /*MAIN*/
 .main-flex-container {
   display: flex;
-  flex-direction: column; /*Behövs den här?*/
+  flex-direction: column;
 }
 
 /*PICTURE SECTION*/
 #picture-section {
-  background-color: #f07167;
   width: fit-content;
   font-size: medium;
-  padding: 10px;
-  margin: 30px;
+  padding-top: 70px;
+  margin-bottom: 30px;
 }
 
 img {
@@ -68,17 +32,16 @@ img {
 /*TEXT SECTION*/
 
 #top-of-text {
-  background-color: #f07167;
   font-size: small;
   text-align: center;
   margin: 10px;
 }
 
-h3 {
-  background-color: #f07167;
+h3, p {
   padding: 50px;
   font-size: medium;
   margin: 10px;
+  text-align: center;
 }
 
 h1,h2 {
@@ -187,4 +150,9 @@ svg{
   .progress-bar-container{
       flex-direction: row;
     }
+
+  #picture-section {
+    padding: 0px;
+    margin-top: -300px;
   }
+}
