@@ -64,7 +64,7 @@ time, mark, audio, video {
      display: flex;
      justify-content: center;
      flex-direction: column;
-     margin: 10px auto;
+     margin: 3rem auto;
      background: #FED9B7;
      padding:5px;
      width: 90%;
@@ -75,6 +75,7 @@ time, mark, audio, video {
      .icons{
       display:flex;
       flex-direction: center;
+      margin-bottom:2rem;
 
      }
      .icons img{
@@ -99,11 +100,11 @@ time, mark, audio, video {
   footer {
   display:flex;
   justify-content: center;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
   color: #333; 
   font-size:15px;
-   padding: 3px;
-   break-after: always;
+ 
+  break-after: always;
   }
 /* small devices *tablets and large phons--------------------------*/
 @media only screen and (min-width: 600px) {
@@ -147,7 +148,7 @@ time, mark, audio, video {
        display: flex;
        justify-content: center;
        flex-direction: column;
-       margin: 10px auto;
+       margin: 3rem auto;
        padding:5px;
        width: 90%;
        }

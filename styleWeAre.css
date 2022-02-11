@@ -6,13 +6,11 @@
   box-sizing: border-box;
 }
 
-
 body {
   position: relative; 
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 #title {
@@ -30,7 +28,6 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
-
 .container .box {
   position: relative;
   width: 20rem;
@@ -86,7 +83,7 @@ body {
 }
 .content a {
   position: absolute;
-  text-decoration: underline #333333;
+  text-decoration: underline #333333 1px;
 }
 
 

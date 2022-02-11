@@ -6,55 +6,63 @@
   box-sizing: border-box;
 }
 
-/*BODY*/
-body {
-  background-color: #00AFB9;
-}
+
 /*FONT*/
 h1, h4, h2 {
   font-family: "Rozha One", serif;
+  font-size: x-large;
 }
 
 h3, h5 {
   font-family: "Times New Roman", Times, serif;
+  font-size: larger;
 }
 
 .project-title {
   font-family: "Times New Roman", Times, serif;
+ 
 }
 /*Denna satte text högst upp i mitten*/
 #projects-section {
   display: flex;
   flex-direction: column; /*ändrar allt*/
   align-items: center; /*ändrar text över bild*/
+ 
 }
 
-#projects-section h4 {
+#projects-section{
   margin-bottom: 1rem;
-}
 
+}
+.portfolio-main{
+  margin-top: 5rem;
+}
 /*Denna gör så att länk (bild och text) ligger i mitten*/
 .project-link{
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding:5px;
 }
 /*Sätter storleken på bilden*/
 img {
   max-width: 80%;
   height: auto;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px #FED9B7 ;
+
 }
 
 #welcome-section {
-  background-color: #f07167;
+  background-color: #FED9B7;
   margin-top: 2rem;
   margin-bottom: 3rem;
-  padding: 2rem;
+
   text-align: center;
 }
 
 #contact-us-section {
-  background-color: #f07167;
+  background-color: #FED9B7;
   padding: 50px;
   font-size: medium;
   margin: 0px;
@@ -65,6 +73,8 @@ img {
   font-size: medium;
   margin: 0px;
   text-align: center;
+
+
 }
 
 @media only screen and (min-width: 992px) {
