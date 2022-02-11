@@ -55,9 +55,6 @@ h1,h2 {
 p {
   font-family: "Times New Roman", Times, serif;
 }
-/*SKILLS SECTION*/
-#skills-section {
-}
 
 /*PROGRESS BAR*/
 .progress-bar-container {
@@ -89,7 +86,6 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  /*border: 1px solid #333333;*/
   box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
   inset 4px 4px 6px -1px rgba(255,255,255,0.7),
   0.5px 0.5px 0px rgba(255,255,255,1),
@@ -132,7 +128,6 @@ svg{
   justify-content: center;
   
 }
-/*Uträkning exempel: 236 - 30% = skriv den summan på stroke-dashoffset */
 @keyframes left {
   100%{
     stroke-dashoffset: 82.6;
