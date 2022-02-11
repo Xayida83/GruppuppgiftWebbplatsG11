@@ -5,6 +5,11 @@
   list-style: none;
   box-sizing: border-box;
 }
+
+/*BODY*/
+body {
+  background-color: #00AFB9;
+}
 /*FONT*/
 h1, h4, h2 {
   font-family: "Rozha One", serif;
@@ -17,12 +22,17 @@ h3, h5 {
 .project-title {
   font-family: "Times New Roman", Times, serif;
 }
-/*Denna satte bakgrund på allt och text högst upp i mitten*/
+/*Denna satte text högst upp i mitten*/
 #projects-section {
   display: flex;
   flex-direction: column; /*ändrar allt*/
   align-items: center; /*ändrar text över bild*/
 }
+
+#projects-section h4 {
+  margin-bottom: 1rem;
+}
+
 /*Denna gör så att länk (bild och text) ligger i mitten*/
 .project-project-tile{
   display: flex;
@@ -36,20 +46,42 @@ img {
 }
 
 #welcome-section {
-  margin-top: 7rem;
+  background-color: #f07167;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  padding: 2rem;
   text-align: center;
 }
 
 #contact-us-section {
   background-color: #f07167;
+  padding: 50px;
+  font-size: medium;
+  margin: 0px;
+  text-align: center;
 }
 .project-text {
-  width: 80%;
+  padding: 50px;
+  font-size: medium;
+  margin: 0px;
+  text-align: center;
 }
 
 @media only screen and (min-width: 992px) {
-  
+  #contact-us-section {
+    background-color: #FED9B7;  
   }
+
+  #welcome-section {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  #projects-section h4 {
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+  }
+}
 
 
   
