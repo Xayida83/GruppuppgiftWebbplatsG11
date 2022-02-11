@@ -34,7 +34,7 @@ h3, h5 {
 }
 
 /*Denna gör så att länk (bild och text) ligger i mitten*/
-.project-project-tile{
+.project-link{
   display: flex;
   flex-direction: column;
   align-items: center;
